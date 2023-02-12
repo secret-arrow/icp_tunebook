@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "tuneBook_backend": {
+      "candid": "src/tuneBook_backend/tuneBook_backend.did",
+      "package": "tuneBook_backend",
+      "type": "rust"
+    },
+    "tuneBook_frontend": {
+      "dependencies": [
+        "tuneBook_backend"
+      ],
+      "source": [
+        "src/tuneBook_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "tuneBook_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
